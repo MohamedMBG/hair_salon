@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star One Beauty - Unleash Your Inner Beauty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Star One Beauty</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-slideshow">
+            <img src="images/hero_image_1.png" alt="Beautiful Hairstyle 1" class="active">
+            <img src="images/hero_image_2.png" alt="Beautiful Hairstyle 2">
+            <img src="images/hero_image_3.png" alt="Beautiful Hairstyle 3">
+        </div>
+        <div class="hero-overlay">
+            <h1>Unleash Your Inner Beauty – Book Your Appointment Today.</h1>
+            <a href="#reservation" class="btn-reserve">Reserve Now</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <i class="fas fa-cut"></i>
+                    <h3>Haircuts</h3>
+                    <p>Expert cuts for all styles and lengths.</p>
+                    <p class="price">Starting from $50</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Hair Coloring</h3>
+                    <p>Vibrant colors and highlights.</p>
+                    <p class="price">Starting from $80</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Blowouts</h3>
+                    <p>Perfectly styled, voluminous hair.</p>
+                    <p class="price">Starting from $40</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-makeup-brush"></i>
+                    <h3>Makeup</h3>
+                    <p>Professional makeup for any occasion.</p>
+                    <p class="price">Starting from $70</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-ring"></i>
+                    <h3>Bridal Packages</h3>
+                    <p>Complete beauty for your special day.</p>
+                    <p class="price">Starting from $200</p>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/salon_interior_1.png" alt="Salon Interior 1">
+                <img src="images/salon_interior_2.png" alt="Salon Interior 2">
+                <img src="images/salon_interior_3.png" alt="Salon Interior 3">
+                <img src="images/hero_image_1.png" alt="Client Hairstyle 1">
+                <img src="images/hero_image_2.png" alt="Client Hairstyle 2">
+                <img src="images/hero_image_3.png" alt="Client Hairstyle 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Star One Beauty is dedicated to bringing out the best in you. Our team of experienced stylists and makeup artists are passionate about creating stunning looks that reflect your unique personality and style. We believe that true beauty comes from within, and our mission is to help you unleash it.</p>
+            <h3>Meet Our Team</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="images/staff_1.png" alt="Staff Member 1">
+                    <h4>Jane Doe</h4>
+                    <p>Lead Stylist</p>
+                    <p>Jane has over 10 years of experience in the beauty industry and specializes in hair coloring and extensions.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/staff_2.png" alt="Staff Member 2">
+                    <h4>John Smith</h4>
+                    <p>Makeup Artist</p>
+                    <p>John is a renowned makeup artist known for his bridal and special occasion makeup.</p>
+                </div>
+            </div>
+            <h3>Client Testimonials</h3>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <p>"Star One Beauty transformed my look! I've never felt more confident."</p>
+                    <p class="client-name">- Sarah L.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The best salon experience I've ever had. Highly recommend their services!"</p>
+                    <p class="client-name">- Emily R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2>Book Your Appointment</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="service">Select Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="">--Please choose a service--</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="hair_coloring">Hair Coloring</option>
+                        <option value="blowout">Blowout</option>
+                        <option value="makeup">Makeup</option>
+                        <option value="bridal_package">Bridal Package</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="stylist">Choose Stylist (Optional):</label>
+                    <select id="stylist" name="stylist">
+                        <option value="">--Any Stylist--</option>
+                        <option value="jane_doe">Jane Doe</option>
+                        <option value="john_smith">John Smith</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Requests (Optional):</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-confirm">Confirm Reservation</button>
+            </form>
+            <div id="confirmation-message" class="confirmation-message" style="display: none;">
+                <p>Your appointment request has been received!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>123 Beauty Ave, Suite 100, City, State 12345</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@staronebeauty.com</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="hours">
+                    <h3>Business Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
+                    <p>Sat: 10:00 AM - 6:00 PM</p>
+                    <p>Sun: Closed</p>
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.298909876543!2d-122.4194158846816!3d37.7749297797591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c8e8e8e8e%3A0x8e8e8e8e8e8e8e8e!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <p class="copyright">&copy; 2025 Star One Beauty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
