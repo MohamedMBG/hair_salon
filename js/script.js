@@ -3,6 +3,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.hero-slideshow img');
     let currentSlide = 0;
 
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const backToTop = document.querySelector('#back-to-top');
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('show');
+    });
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
     function showSlide(index) {
         slides.forEach((slide, i) => {
             slide.classList.toggle('active', i === index);
@@ -66,13 +79,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     });
 
-    // Navbar background on scroll
+    // Navbar background on scroll and back-to-top visibility
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 100) {
             navbar.style.background = 'rgba(255, 255, 255, 0.98)';
         } else {
             navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        }
+
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
         }
     });
 
